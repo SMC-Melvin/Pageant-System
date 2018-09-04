@@ -1,1 +1,1 @@
-# Bato Website
+# SMC Pageant System
