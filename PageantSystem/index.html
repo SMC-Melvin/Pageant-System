@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="PageantSystem">
+    <head>
+        <title>Pageant System</title>
+
+        <link rel="shortcut icon" href="/favicon.ico"  type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <base href="/">
+
+        <!-- bower:css -->
+        <!-- endbower -->
+
+        <!-- inject:css -->
+        <!-- endinject -->
+
+    </head>
+    <body id="main" data-ng-controller="AppController as vm">
+        <nav class="navbar navbar-custom navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand nav-link" href="#main">
+                        Pageant System
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="nav-link" data-ui-sref="home">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section data-ui-view=""></section>
+        
+        <!-- bower:js -->
+        <!-- endbower -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+        <!-- inject:js -->
+        <!-- endinject -->
+        
+
+    </body>
+</html>
