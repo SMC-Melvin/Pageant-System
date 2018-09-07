@@ -11,6 +11,7 @@ var wiredep = require('wiredep').stream;
 var gulpBowerFiles = require('gulp-bower-files');
 var browserSync = require('browser-sync').create();
 var babel = require('gulp-babel');
+var ngAnnotate = require('gulp-ng-annotate');
 
 
 
@@ -109,6 +110,7 @@ gulp.task('angular-js',['clean-angular-js'],function(){
     }))
     .pipe(plumber())
     .pipe(rename({suffix: '.min'}))
+    .pipe(ngAnnotate())
     .pipe(uglify())
     .pipe(gulp.dest('./public/assets/app/'));
 });
